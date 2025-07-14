@@ -3,7 +3,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import { FaBuilding, FaFileAlt } from "react-icons/fa";
-
 import gharpadharoLogo from "../assets/Gharpadharo_logo.png";
 import euphoriaLogo from "../assets/euphoria_genx_logo.jpg";
 
