@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 
 import { FaBuilding, FaFileAlt } from "react-icons/fa";
 
-import gharpadharoLogo from "../assets/GharPadharo_logo.png";
+import gharpadharoLogo from "../assets/Gharpadharo_logo.png";
 import euphoriaLogo from "../assets/euphoria_genx_logo.jpg";
 
 const Experience = () => {
