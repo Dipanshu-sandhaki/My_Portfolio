@@ -68,15 +68,15 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_7uo6p7k",
-        "template_qrilg5g",
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           title: "Contact Form Submission",
           name: formData.name,
           message: formData.message,
           email: formData.email,
         },
-        "xcsnu2vqC6a-j6whD"
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
 
       .then((response) => {
