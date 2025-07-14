@@ -32,9 +32,12 @@ const LeetCodeStatsCard = ({ username }) => {
   const fetchStats = async () => {
     try {
       setRefreshing(true);
-      const response = await axios.post("http://localhost:5000/leetcode", {
-        username,
-      });
+      const response = await axios.post(
+        "https://portfolio-backend-b8yr.onrender.com/leetcode",
+        {
+          username,
+        }
+      );
       setStats(response.data);
     } catch (err) {
       console.error("LeetCode API Error:", err);
