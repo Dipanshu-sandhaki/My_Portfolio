@@ -1,12 +1,16 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Github, ExternalLink } from 'lucide-react'
+import weatherImage from "../assets/Weather-project.png";
+import foodImage from "../assets/Food Delivery project.jpg";
+import busImage from "../assets/bus-booking-system.jpg";
+
 
 const Projects = () => {
   const projectList = [
     {
       id: 1,
-      thumbnail: "/src/assets/weather-project.png",
+      thumbnail: weatherImage,
       name: "Weather App",
       description: "A React-based weather application that fetches real-time weather data from OpenWeatherMap API.",
       github: "https://github.com/Dipanshu-sandhaki/Weather-forecast-Web-Application",
@@ -14,7 +18,7 @@ const Projects = () => {
     },
     {
       id: 2,
-      thumbnail: "/src/assets/Food delivery project.jpg",
+      thumbnail: foodImage,
       name: "Food Ordering App",
       description: "An E-commerce food ordering platform built with the MERN stack with online payment integration.",
       github: "https://github.com/Dipanshu-sandhaki/Ecommerce-Food-App-Using---MERN-Stack",
@@ -22,7 +26,7 @@ const Projects = () => {
     },
     {
       id: 3,
-      thumbnail: "/src/assets/bus-booking-system.jpg",
+      thumbnail: busImage,
       name: "Bus Reservation Management System",
       description: "A responsive web app to search, book, and manage bus reservations with user-friendly features and real-time updates.",
       github: "https://github.com/Dipanshu-sandhaki/BUS-Reservation-Management-System",
