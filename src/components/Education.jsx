@@ -5,6 +5,8 @@ import { FaEye, FaRegCalendarAlt, FaChartLine, FaCheckCircle } from "react-icons
 import { motion } from "framer-motion";
 import uuLogo from "../assets/uttaranchal-logo.jpg";
 import timtLogo from "../assets/timt-logo.png";
+import wbbseLogo from "../assets/wbbse.png";
+import wbchseLogo from "../assets/wbbhse.jpg";  
 
 const educationData = [
   {
@@ -34,9 +36,9 @@ const educationData = [
     title: "Higher Secondary Education (Class 12th)",
     institution: "Chatra Kunja Rani Bani Bhawan (H.S), Hogalberya, West Bengal",
     duration: "2021",
-    cgpa: "67%",
+    cgpa: "66%",
     remark: "Pass",
-    logo: "/src/assets/Wbbhse.png",
+    logo: wbchseLogo,
     certificate: "/certificates/12th board Certificate.pdf",
     note: "Board: West Bengal Council of Higher Secondary Education (WBCHSE) | Stream: Science",
   },
@@ -47,7 +49,7 @@ const educationData = [
     duration: "2019",
     cgpa: "54%",
     remark: "Pass",
-    logo: "/src/assets/wbbse.png",
+    logo: wbbseLogo,
     certificate: "/certificates/10th board Certificate.pdf",
     note: "Board: West Bengal Board of Secondary Education (WBBSE)",
   },
