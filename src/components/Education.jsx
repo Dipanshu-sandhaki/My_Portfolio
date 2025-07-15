@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import uuLogo from "../assets/uttaranchal-logo.jpg";
 import timtLogo from "../assets/timt-logo.png";
 import wbbseLogo from "../assets/wbbse.png";
-import wbchseLogo from "../assets/wbbhse.jpg";  
+import wbchseLogo from "../assets/wbchse.jpg"; 
 
 const educationData = [
   {
