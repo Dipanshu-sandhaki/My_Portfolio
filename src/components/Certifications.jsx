@@ -47,14 +47,14 @@ const Certifications = () => {
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-cyan-400 mb-4">My Certifications</h2>
         <p className="text-gray-400 mb-10 text-sm sm:text-base">
-          Here are some of the certifications I have earned throughout my Accademic's journey.
+          Here are some of the certifications I have earned throughout my academic journey.
         </p>
 
         <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
           {certificates.map((cert, idx) => (
             <div
               key={idx}
-              data-aos="zoom-in"
+              data-aos="fade-up"
               className="bg-white/10 backdrop-blur-md border border-white/10 shadow-[inset_0_0_15px_rgba(255,255,255,0.05),0_0_30px_rgba(6,182,212,0.2)] rounded-xl overflow-hidden p-4 flex flex-col items-center transition-all hover:scale-[1.05]"
             >
               <img

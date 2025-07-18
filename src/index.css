@@ -3,7 +3,10 @@
 html {
   scroll-behavior: smooth;
 }
-
+html,
+body {
+  overflow-x: hidden;
+}
  
   /* Flip Card Styles Achievement page */
 .perspective {
@@ -30,3 +33,23 @@ html {
   scrollbar-width: none;     /* Firefox */
 }
 
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.4s ease forwards;
+}
+
+body.scroll-lock {
+  overflow: hidden !important;
+  height: 100vh !important;
+  touch-action: none !important;
+}

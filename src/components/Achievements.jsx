@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react"
-import loaImage from "../assets/loa.jpg"
-import loaCertificate from "../assets/loa_certificate.jpg"
-import AOS from "aos"
-import "aos/dist/aos.css"
+import React, { useState, useEffect } from "react";
+import loaImage from "../assets/loa.jpg";
+import loaCertificate from "../assets/loa_certificate.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import {
   CalendarDays,
   UserCheck,
@@ -13,34 +13,34 @@ import {
   Users,
   BadgeCheck,
   ExternalLink,
-  Award
-} from "lucide-react"
+  Award,
+} from "lucide-react";
 
-const isMobile = () => window.innerWidth < 768
+const isMobile = () => window.innerWidth < 768;
 
 const Achievements = () => {
-  const [flipped, setFlipped] = useState(false)
+  const [flipped, setFlipped] = useState(false);
 
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true })
+    AOS.init({ duration: 1000, once: true });
 
     if (!isMobile()) {
-      const flipTimeout = setTimeout(() => setFlipped(true), 2000)
-      const flipBackTimeout = setTimeout(() => setFlipped(false), 5000)
+      const flipTimeout = setTimeout(() => setFlipped(true), 2000);
+      const flipBackTimeout = setTimeout(() => setFlipped(false), 5000);
       return () => {
-        clearTimeout(flipTimeout)
-        clearTimeout(flipBackTimeout)
-      }
+        clearTimeout(flipTimeout);
+        clearTimeout(flipBackTimeout);
+      };
     }
-  }, [])
+  }, []);
 
-  const handleClickFlip = () => setFlipped((prev) => !prev)
+  const handleClickFlip = () => setFlipped((prev) => !prev);
   const handleMouseEnter = () => {
-    if (!isMobile()) setFlipped(true)
-  }
+    if (!isMobile()) setFlipped(true);
+  };
   const handleMouseLeave = () => {
-    if (!isMobile()) setFlipped(false)
-  }
+    if (!isMobile()) setFlipped(false);
+  };
 
   return (
     <section
@@ -52,10 +52,10 @@ const Achievements = () => {
           Achievements & Recognition
         </h2>
         <p className="text-sm sm:text-base text-gray-400 max-w-2xl mb-12">
-          I take pride in being recognized for my work during impactful
-          academic events and technical contributions. Here’s a featured
-          recognition that highlights my ability to work under pressure and
-          deliver successful solutions.
+          I take pride in being recognized for my work during impactful academic
+          events and technical contributions. Here’s a featured recognition that
+          highlights my ability to work under pressure and deliver successful
+          solutions.
         </p>
 
         <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-6 w-full px-2">
@@ -156,7 +156,7 @@ const Achievements = () => {
                   </li>
                   <li className="flex items-center gap-2">
                     <Users size={14} className="text-cyan-400" />
-                    Cross-functional team collaboration with collegues
+                    Cross-functional team collaboration with colleagues.
                   </li>
                 </ul>
 
@@ -192,7 +192,7 @@ const Achievements = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Achievements
+export default Achievements;

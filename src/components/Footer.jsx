@@ -4,18 +4,19 @@ import { MdEmail } from "react-icons/md";
 import { SiLeetcode, SiGeeksforgeeks } from "react-icons/si";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
-
 const Footer = () => {
   return (
     <footer className="bg-[#07132f] text-gray-400 pt-10 pb-6">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
         {/* Logo + Name + Tagline */}
         <div className="flex items-start gap-4">
-          <img
-            src="/SbLogo.jpg"
-            alt="Logo"
-            className="w-12 h-12 object-contain rounded-full"
-          />
+          <a href="#home">
+            <img
+              src="/SbLogo.jpg"
+              alt="Logo"
+              className="w-12 h-12 object-contain rounded-full hover:scale-105 transition duration-300"
+            />
+          </a>
           <div>
             <h3 className="text-xl font-semibold text-white">
               Dipanshu Sandhaki
@@ -26,53 +27,29 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Quick Links - Proper 3 Column Layout Under Centered Heading */}
+        {/* Quick Links */}
         <div className="w-full">
           <h4 className="text-white font-semibold mb-4 text-center">
             Quick Links
           </h4>
           <div className="grid grid-cols-3 gap-x-6 gap-y-3 text-sm justify-items-start sm:justify-items-center">
             <div className="flex flex-col gap-2">
-              <a href="#home" className="hover:text-white transition">
-                Home
-              </a>
-              <a href="#about" className="hover:text-white transition">
-                About
-              </a>
-              <a href="#gallery" className="hover:text-white transition">
-                Gallery
-              </a>
-              <a href="#CareerGoals" className="hover:text-white transition">
-                Career Goals
-              </a>
+              <a href="#home" className="hover:text-white transition">Home</a>
+              <a href="#about" className="hover:text-white transition">About</a>
+              <a href="#gallery" className="hover:text-white transition">Gallery</a>
+              <a href="#CareerGoals" className="hover:text-white transition">Career Goals</a>
             </div>
             <div className="flex flex-col gap-2">
-              <a href="#skills" className="hover:text-white transition">
-                Skills
-              </a>
-              <a href="#leetcode-stats" className="hover:text-white transition">
-                LeetCode Stats
-              </a>
-              <a href="#projects" className="hover:text-white transition">
-                Projects
-              </a>
-              <a href="#education" className="hover:text-white transition">
-                Education
-              </a>
+              <a href="#skills" className="hover:text-white transition">Skills</a>
+              <a href="#leetcode-stats" className="hover:text-white transition">LeetCode Stats</a>
+              <a href="#projects" className="hover:text-white transition">Projects</a>
+              <a href="#education" className="hover:text-white transition">Education</a>
             </div>
             <div className="flex flex-col gap-2">
-              <a href="#experience" className="hover:text-white transition">
-                Experience
-              </a>
-              <a href="#achievements" className="hover:text-white transition">
-                Achievements
-              </a>
-              <a href="#certifications" className="hover:text-white transition">
-                Certifications
-              </a>
-              <a href="#contact" className="hover:text-white transition">
-                Contact
-              </a>
+              <a href="#experience" className="hover:text-white transition">Experience</a>
+              <a href="#achievements" className="hover:text-white transition">Achievements</a>
+              <a href="#certifications" className="hover:text-white transition">Certifications</a>
+              <a href="#contact" className="hover:text-white transition">Contact</a>
             </div>
           </div>
         </div>

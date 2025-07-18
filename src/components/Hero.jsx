@@ -2,8 +2,10 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
-import { FaUserTie } from "react-icons/fa";
-import { FiDownload } from "react-icons/fi"; // Importing download icon
+import { FaUserTie, FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FiDownload } from "react-icons/fi";
+import { SiLeetcode } from "react-icons/si";
+import { MdEmail } from "react-icons/md";
 
 const Hero = () => {
   return (
@@ -64,8 +66,9 @@ const Hero = () => {
           latest in technology. Let's build something amazing together!
         </motion.p>
 
+        {/* 🎯 CTA Button */}
         <motion.div
-          className="flex justify-center gap-4 flex-wrap"
+          className="flex justify-center gap-4 flex-wrap mb-6"
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 1.2, duration: 0.6 }}
@@ -74,8 +77,65 @@ const Hero = () => {
             href="#contact"
             className="inline-flex items-center gap-3 px-7 py-3 rounded-full border border-cyan-500 text-cyan-500 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 hover:text-white transition duration-300"
           >
-            <FaUserTie className="text-xl text-cyan" />
+            <FaUserTie className="text-xl" />
             <span className="tracking-wide text-lg">Hire Me</span>
+          </a>
+          <a
+            href="/Dipanshu_Sandhaki_Resume.pdf"
+            download
+            className="inline-flex items-center gap-3 px-7 py-3 rounded-full border border-gray-300 text-white hover:bg-white hover:text-black transition duration-300"
+          >
+            <FiDownload className="text-xl" />
+            <span className="tracking-wide text-lg">Resume</span>
+          </a>
+        </motion.div>
+
+        {/* 🔗 Social Icons */}
+        <motion.div
+          className="flex justify-center items-center gap-6 text-2xl"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.5, duration: 0.6 }}
+        >
+          <a
+            href="mailto:dipanshusandhaki17@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-cyan-400 transition duration-300"
+          >
+            <MdEmail />
+          </a>
+          <a
+            href="https://github.com/Dipanshu-sandhaki"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-cyan-400 transition duration-300"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href="https://leetcode.com/Dipanshusandhaki/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-cyan-400 transition duration-300"
+          >
+            <SiLeetcode />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/dipanshusandhaki"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-cyan-400 transition duration-300"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://www.instagram.com/mr.dipanshuuuu"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-pink-400 transition duration-300"
+          >
+            <FaInstagram />
           </a>
         </motion.div>
       </div>
